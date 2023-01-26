@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "b929d13d-18bd-418c-973b-e7dd2828aa90",
+		"name": "CR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Autorize",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.centredo.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "uk"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "https://app.centredo.com"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "referer",
+						"value": "https://app.centredo.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"109\", \"Chromium\";v=\"109\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"login\":\"lisitsky89@gmail.com\",\"password\":\"NmA6GXpqUxQ5FCg\"}"
+				},
+				"url": {
+					"raw": "https://api.centredo.com/api/login",
+					"protocol": "https",
+					"host": [
+						"api",
+						"centredo",
+						"com"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update users profile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authority",
+						"value": "api.centredo.com"
+					},
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "uk"
+					},
+					{
+						"key": "authorization",
+						"value": "Bearer caee61ef-e83e-49e8-aee9-8646bdad8c6a"
+					},
+					{
+						"key": "cache-control",
+						"value": "no-cache"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "mailbox",
+						"value": "3513be94-61b0-42a9-89b2-7258b10b1a30"
+					},
+					{
+						"key": "origin",
+						"value": "https://app.centredo.com"
+					},
+					{
+						"key": "pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "referer",
+						"value": "https://app.centredo.com/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"109\", \"Chromium\";v=\"109\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "same-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"firstName\":\"Anton1\",\"lastName\":\"Lysytskyi\",\"locale\":\"uk\",\"timezone\":\"Europe/Kyiv\",\"phone\":\"+380987817033\",\"displayExactDate\":true,\"dateLocale\":\"uk_UA\",\"avatar\":null}"
+				},
+				"url": {
+					"raw": "https://api.centredo.com/api/v1/user/profile",
+					"protocol": "https",
+					"host": [
+						"api",
+						"centredo",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
